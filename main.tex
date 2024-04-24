@@ -1,0 +1,96 @@
+\documentclass{CjC}
+\usepackage{don}
+
+% ==================================================
+\begin{document}
+
+% 标题部分
+\begin{center}
+\zihao{2-}{\fangsong \textbf{自然辩证法研究LaTeX模板}}
+
+\vspace{10pt}
+
+\zihao{4-}{\kaishu Koorye$^1$}
+
+\vspace{10pt}
+
+\zihao{5}{\songti (1. 电子科技大学，计算机科学与工程学院，成都\ 611731)}
+\end{center}
+
+\vspace{10pt}
+
+% ==================================================
+% 摘要部分
+\songti
+
+\textbf{摘要：} {\kaishu 摘要内容为5号楷体}
+
+\textbf{关键词：} 关键词1、关键词2、关键词3
+
+\textbf{中图分类号：} \textbf{NO31} \quad \textbf{文献识别码：} \textbf{A}
+
+\vspace{10pt}
+
+% ==================================================
+% 正文部分
+\section{一级标题}
+
+正文内容为5号宋体\cite{chen2005zhulu}。
+
+\subsection{二级标题}
+
+% 图插入
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{pics/example.png}
+\caption{图例内容为5号加粗宋体}
+\end{figure}
+
+\subsubsection{三级标题}
+
+% 表插入
+\begin{table}[h]
+\tabcolsep=20pt
+\centering
+\caption{表例内容为5号加粗宋体}
+\begin{tabular}{ccc}
+    \toprule
+    列1 & 列2 & 列3 \\
+    \midrule 
+    X & X & X \\
+    X & X & X \\
+    \bottomrule
+\end{tabular}
+\end{table}
+
+% ==================================================
+% 参考文献
+\begingroup
+\renewcommand{\section}[2]{}
+\noindent\textbf{参考文献}
+\bibliographystyle{journal}
+\bibliography{ref}
+\endgroup
+
+% ==================================================
+% 英文部分
+
+\newpage
+\begin{center}
+
+\zihao{4}{\textbf{Dialectics of Nature LaTeX Template}}
+
+\vspace{10pt}
+
+\zihao{4-}{Koorye$^1$}
+
+\vspace{10pt}
+
+\zihao{5}{(1. School of Computer Science and Engineering, University of Electronic and Science Technology, Chengdu \ 611731)}
+\end{center}
+
+\textbf{Abstract：} {\kaishu Abstract...}
+
+\textbf{Key words：} Key word1, Key word2, Key word3
+
+\end{document}
